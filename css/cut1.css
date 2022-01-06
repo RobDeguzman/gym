@@ -1,0 +1,41 @@
+.MainTitle {
+    font-size: 45px;
+    font-family: sans-serif;
+}
+.SecondTitle {
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.para1 {
+    text-align: justify;
+    font-size: 0.95em;
+}
+.TablePro {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-family: sans-serif;
+    min-width: 400px;
+}
+.TablePro thead tr {
+    background-color: lightblue;
+    font-size: 0.8em;
+    text-align: left;
+}
+.TablePro tbody tr {
+    font-size: 0.65em;
+}
+.WeekPro {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-family: sans-serif;
+    min-width: 400px;
+}
+.WeekPro thead tr {
+    background-color: lightblue;
+    font-size: 0.8em;
+    text-align: left;
+}
+.WeekPro tbody tr {
+    font-size: 0.85em;
+}
+
