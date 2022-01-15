@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family:'Merriweather', serif;
+    text-align: center;
+}
+.HeadText {
+    width: 10%;
+    margin: 0 auto 0 auto;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+h1 {
+    width: 10%;
+    margin: 0 auto 0 auto;
+    font-family: 'Oswald', sans-serif;
+}
+h2 {
+    font-family: 'Oswald', sans-serif;
+}
+h3 {
+
+}
+
+.Top-Container {
+    background-color: #52616B;
+    text-align: center;
+    position: relative;
+    padding-top: 50px;
+}
+.TopCloud {
+    position: absolute;
+    right: 300px;
+    top: 100px;
+
+}
+.BottomCloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+.MainRob {
+    width: 10%;
+    margin: 0 auto 0 auto;
+}
+.barbellimg {
+    height: 200px;
+    width: 200px
+}
+.guitarimg {
+    height: 200px;
+    width: 200px
+}
+
+.middle-container {
+    background: #C9D6DF;
+}
+.bottom-container {
+    background: #F0F5F9;
+}
+.SquatIMG {
+    height: 200px;
+    width: 200px;
+}
