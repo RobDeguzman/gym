@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>BMR Calculator</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/bulk.css">
+  <link rel="stylesheet" href="css/calorie.css">
 </head>
 <body>
-
-<nav class="navbar bg-dark navbar-expand-lg navbar-dark">
+<nav class="navbar bg navbar-expand-lg navbar-dark">
   <a class="navbar-brand" href="">Gym</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -24,106 +23,29 @@
       <li class="nav-item">
         <a class="nav-link" href="bulk.html">Bulk</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="calindex.html">Calculator</a>
+      </li>
     </ul>
   </div>
 </nav>
-<section id="hero" class="d-flex align-items-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-5 pt-lg-0 order-2 order-lg-1" data-aos="fade-up">
-        <div>
-          <h1>Calculator</h1>
-          <h2>Lorem Ispurg </h2>
-        </div>
-      </div>
-      <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
-        <img src="Image-Folder/bulkman.png" class="bulkman" alt="">
-      </div>
-    </div>
-  </div>
 
-</section>
-<section id="features" class="features">
-  <div class="container">
-    <div class="section-title">
-      <h2>What is Bulking?</h2>
-      <p class="SP1">A bulk is a period of eating in a strategic calorie surplus. That is, when you’re bulking, you eat more calories than you burn. The goal is to gain weight, primarily due to increased muscle mass.
-        People most often combine bulking with high intensity resistance training to help boost their muscle and strength gains.
-        You can accomplish this in a tightly controlled fashion, which people refer to as a clean bulk, or with a more liberal approach, often called a dirty bulk.
-        With either approach, the goal is to eat more calories than you burn to promote muscle gains.From there, aim for a daily protein intake of 0.7–1 gram per pound of body weight (1.6–2.2 grams per kg) to support muscle gain. The rest of your daily calories are made up of carbs and fats, though this depends on your preference
-        Weigh yourself regularly to track your progress, shooting for a weight gain of 0.25–0.5% of your body weight per weekPeople usually pair a bulk with high intensity resistance training to maximize muscle gains.
-        A bulking phase can last anywhere from 1 month to over 6 months or longer, depending on your goals.</p>
-    </div>
-  </div>
-</section>
-<section id="tablepro" class="tablepro">
-  <div class="container">
-    <table class="table table-bordered">
-      <thead>
-      <tr>
-        <th scope="col"></th>
-        <th scope="col">PRO</th>
-        <th scope="col">CONS</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Promotes muscle gaining</td>
-        <td>May lead to excess fat gains</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Increases strength	</td>
-        <td>Can affect blood values</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Increases bone density	</td>
-        <td>May make you feel sluggish</td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>Allows for efficient recovery from exercise</td>
-        <td>Can decrease insulin sensitivity</td>
-      </tr>
-      <tr>
-        <th scope="row">5</th>
-        <td>Promotes healthy libido</td>
-        <td>Decreases Athletic performance</td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
-
-</section>
-<section id="bulkdropdown" class="bulkdropdown">
-  <div class="container">
-    <div class="bulkdownn">
-      <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Weeks
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="bulkweeks/bulkweek1.html">Week 1</a>
-        <a class="dropdown-item" href="#">Week 2</a>
-        <a class="dropdown-item" href="#">Week 3</a>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="Caloriee">
-  <div class="container">
-
-  height<input type="text" id="He"><br><br>
-  weight<input type="text" id="We"><br><br>
-  Age<input type="text" id="Ag"><br><br>
-  <input type="button" value="Calculate" onclick="bmi()">
-  <h2 class="text-input">KJ=<b id="bmi_index"></b></h2>
-  </div>
-</section>
+<div class="container">
+  <h2 class="h2title">BMR Calculator</h2>
+  <p class="text">Height</p>
+  <input type="text" id="h">
+  <p class="text">Weight</p>
+  <input type="text" id="w">
+  <p class="text">Age</p>
+  <input type="text" id="a">
+  <p id="Results"></p>
+  <button id="Btn"  onclick="BMR()">Calculate</button>
+  <p id="info">Please enter height [cm] and weight [kg]</p>
+</div>
 
 
-<script src="calorie.js"></script>
+
+<script src="js/calorie.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
